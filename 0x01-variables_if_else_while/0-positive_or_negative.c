@@ -10,6 +10,8 @@ int main(void)
 {
 	int n;
 
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
 	printf("entrer le nombre %d", n);
 	scanf("%d", &n);
 	if (n > 0)
@@ -24,9 +26,5 @@ int main(void)
 	{
 		pintf("%d is negative\n", n);
 	}
-
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
-	/* your code goes there */
 	return (0);
 }

@@ -2,7 +2,7 @@
 #include <time.h>
 #include <stdio.h>
 /**
- * main - Entry point
+ * main - determines number n if is positif, negatif or zero
  *
  * Return: 0 (success)
  */
@@ -22,7 +22,7 @@ int main(void)
 	}
 	else
 	{
-		pintf("%d is negative\n", n);
+		printf("%d is negative\n", n);
 	}
 	return (0);
 }

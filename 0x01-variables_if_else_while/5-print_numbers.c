@@ -11,7 +11,7 @@ int main(void)
 
 	for (n = 0; n < 10; n++)
 	{
-		printf("all single digit numbers is %d\n", n);
+		printf("%d", n);
 	}
 	return (0);
 }

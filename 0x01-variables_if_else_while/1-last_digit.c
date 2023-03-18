@@ -11,6 +11,7 @@
 int main(void)
 {
 	int n;
+
 	int Ld;
 
 	srand(time(0));
@@ -24,7 +25,7 @@ int main(void)
 	{
 		printf("the last digit of %d is %d and is greater than 5\n", n, Ld);
 	}
-	else
+	else if (Ld == 0)
 	{
 		printf("the last digit of %d is %d and is 0\n", n, Ld);
 	}

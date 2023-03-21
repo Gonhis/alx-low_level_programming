@@ -1,10 +1,9 @@
 #include "main.h"
 /**
- * main - Entry point
+ * print_alphabet - Entry point
  *
  * Return: 0
  */
-
 void print_alphabet(void)
 {
 	char lc;
@@ -15,5 +14,4 @@ void print_alphabet(void)
 		_putchar(lc);
 	}
 	_putchar('\n');
-	return (0);
 }

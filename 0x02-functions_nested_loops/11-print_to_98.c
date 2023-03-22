@@ -5,7 +5,7 @@
  *
  * @n: input number
  *
- * Return: n
+ * Return: 0
  */
 void print_to_98(int n)
 {
@@ -13,7 +13,7 @@ void print_to_98(int n)
 	{
 		for (; n <= 98; n++)
 		{
-			printf("\d", n);
+			printf('\d', n);
 			printf("\n");
 		}
 	}
@@ -21,10 +21,10 @@ void print_to_98(int n)
 	{
 		for (; n >= 98; n++)
 		{
-			printf("\d", n);
+			printf('\d', n);
 			printf("\n");
 		}
 	}
-	return (n);
+	return (0);
 }
 

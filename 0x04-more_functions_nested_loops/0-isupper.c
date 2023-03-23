@@ -8,9 +8,6 @@
  */
 int _isupper(int c)
 {
-	c = 'A';
-	for (c = 'A'; c <= 'Z'; c++)
-	{
 		if (c >= 65 && c <= 90)
 		{
 			return (1);
@@ -19,6 +16,5 @@ int _isupper(int c)
 		{
 			return (0);
 		}
-	}
-	_putchar('\n');
+		_putchar('\n');
 }

@@ -11,12 +11,11 @@ int _isupper(int c)
 	c = 'A';
 	for (c = 'A'; c <= 'Z'; c++)
 	{
-		if (c >= 'A' && c <= 'Z')
+		if (c >= 65 && c <= 90)
 		{
-			_putchar(c);
 			return (1);
 		}
-		else if (c >= 'a' && c <= 'z')
+		else
 		{
 			return (0);
 		}

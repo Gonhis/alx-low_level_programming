@@ -30,16 +30,13 @@ int _sqrt_recursion(int n)
  */
 int new_sqrt_recursion(int n, int i)
 {
-	if (i * i == n)
+	if ((i * i) == n)
 	{
 		return (n);
 	}
-	else if (i * i > n)
+	else if ((i * i) > n)
 	{
 		return (-1);
 	}
-	else
-	{
-		return (new_sqrt_recursion(n, i + 1));
-	}
+	return (new_sqrt_recursion(n, i + 1));
 }

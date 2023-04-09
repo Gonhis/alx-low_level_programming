@@ -1,2 +1,11 @@
 #include "main.h"
-int _atoi(char *s);
+/**
+ * _atoi - fuction
+ *
+ * @s: string
+ *
+ * Return: 0
+ */
+int _atoi(char *s)
+{
+}

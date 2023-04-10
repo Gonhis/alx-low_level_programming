@@ -19,13 +19,14 @@ int main(int argc, char *argv[])
 			printf("argv[%d] = %s\n", i, argv[i]);
 			mult = mult * atoi(argv[i]);
 		}
-		return (0);
+		printf("Total = %d\n", mult);
 	}
+	return (0);
 	else
 	{
 		printf("Error\n");
-		return (1);
 	}
+	return (1);
 }
 
 

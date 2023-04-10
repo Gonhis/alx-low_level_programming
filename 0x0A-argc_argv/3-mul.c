@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
 	if (argc == 3)
 	{
 		mult = atoi(argv[1]) * atoi(argv[2]);
-		printf("Total = %d\n", mult);
+		printf("%d\n", mult);
 	}
 	else
 	{

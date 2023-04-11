@@ -17,12 +17,9 @@ char *create_array(unsigned int size, char c)
 	{
 		return ('\0');
 	}
-	else
+	while (size--)
 	{
-		while (size--)
-		{
-			p[size] = c;
-		}
+		p[size] = c;
 	}
-	return (*p);
+	return (p);
 }

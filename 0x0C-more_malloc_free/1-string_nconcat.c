@@ -11,8 +11,11 @@ int string_lenght(char *string)
 {
 	int i;
 
-	for (i = 0; string[i] != '\0'; i++)
-		;
+	i = 0;
+	while (string[i] != '\0')
+	{
+		i++;
+	}
 	return (i);
 }
 /**

@@ -8,7 +8,7 @@
  */
 void print_binary(unsigned long int n)
 {
-	int index = 0, C = 0;
+	int index = 63, C = 0;
 
 	unsigned long int ism;
 

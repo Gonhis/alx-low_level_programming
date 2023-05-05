@@ -26,7 +26,7 @@ void print_binary(unsigned long int n)
 		}
 		index--;
 	}
-	if (!count)
+	if (!C)
 	{
 		_putchar('0');
 	}

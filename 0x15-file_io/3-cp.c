@@ -1,4 +1,5 @@
 #include "main.h"
+
 char *new_buff(char *file);
 void close_file(int descrip);
 
@@ -60,6 +61,7 @@ void close_file(int descrip)
 int main(int argc, char *argv[])
 {
 	int ff, a, r, w;
+
 	char *buffer;
 
 	if (argc != 3)
@@ -67,12 +69,10 @@ int main(int argc, char *argv[])
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
-
 	buffer = new_buff(argv[2]);
 	ff = open(argv[1], O_RDONLY);
 	r = read(ff, buffer, 1024);
 	a = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
-
 	do {
 		if (ff == -1 || r == -1)
 		{
@@ -92,7 +92,6 @@ int main(int argc, char *argv[])
 		r = read(ff, buffer, 1024);
 		a = open(argv[2], O_WRONLY | O_APPEND);
 	} while (r > 0);
-
 	free(buffer);
 	close_file(ff);
 	close_file(a);

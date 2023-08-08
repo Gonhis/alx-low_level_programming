@@ -90,5 +90,6 @@ int main(int argc, char *argv[])
 	free(buffer);
 	close_file(ff);
 	close_file(a);
+
 	return (0);
 }
